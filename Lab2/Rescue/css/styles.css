@@ -1,0 +1,348 @@
+/*
+Author: Throdore Petrides
+Date:
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rule for body & images */
+body {
+  background-color: #f6eee4;
+}
+
+img {
+  max-width: 100%;
+     display: block;
+     }
+
+     /*style rules for Mobile*/
+     .mobile{
+       display: block;
+     }
+
+     .tab-desk {
+            display: none;
+          }
+
+        .mobile-Tablet{
+          display: block;
+        }
+
+  /*stly for header area*/
+    .mobile h1{
+      padding: 2%;
+      text-align: center;
+      font-family: 'Emblema One', cursive;
+    }
+
+    .mobile h3{
+      padding: 2%;
+      text-align: center;
+      font-family: 'Lora', serif;
+    }
+
+/* Style rules for navigation area */
+     nav {
+       background-color: #2a1f14;
+       }
+
+       nav ul {
+         list-style-type: none;
+         text-align: center;
+         }
+
+         nav li {
+           display: block;
+           font-size: 1.5em;
+           font-family: Geneva, Arial, sans-serif;
+           font-weight: bold;
+           border-top: .5px;
+           border-color: #f6eee4;
+
+
+           }
+
+           nav li a {
+             display: block;
+             color: #f6eee4;
+             padding: 0.5em 2em;
+             text-decoration: none;
+             }
+
+             /* Style rules for main content */
+             main  {
+               padding: 2%;
+               font-family: 'Lora', serif;
+               }
+
+               main p {
+                 font-size: 1.25em;
+                 }
+
+                 main h3{
+                   padding-top: 2%
+                 }
+
+
+                 main ul{
+                   list-style-type: square;
+                 }
+
+
+                 .link{
+                   color: #4d3319;
+                   text-decoration: none;
+                   font-weight: bold;
+                   font-style: italic;
+                 }
+
+
+                 .action  {
+                   font-size: 1.75em;
+                  text-align: center;
+                   font-weight: bold;
+                   }
+
+                   .round{
+                     border-radius: 6px;
+
+                   }
+
+                   aside{
+                     text-align: center;
+                     font-size: 1.5em;
+                     font-weight: bold;
+                     color: #373684;
+                     text-shadow: 4px 4px 10px #c5a687;
+                   }
+                   figure{
+                     box-shadow: 6px 6px 10px #c5a687;
+                     max-width: 400px;
+                     margin: 2% auto;
+                     border: 4px solid #2a1f14;
+                   }
+                   figcaption{
+                   border-top: 4px solid #2a1f14;
+                     padding: 2%;
+                   }
+
+
+                   #info{
+                     margin-left: 10%
+
+                   }
+         #contact{
+           text-align: center;
+         }
+         #contact, #form h2 {
+  text-align: center;
+
+}
+#contact .email-link {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+         .tel-link{
+           background-color: #2a1f14;
+           padding: 2%;
+           width: 80%;
+           margin: 0 auto;
+         }
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Style rules for form elements */
+fieldset {
+  margin-bottom: 2%;
+}
+input {
+  margin-bottom: 2%;
+}
+textarea {
+  margin-bottom: 2%;
+}
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+label {
+  display: block;
+  padding-top: 2%;
+}
+#submit {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+             /* Style rules for footer content */
+
+             footer  {
+               text-align: center;
+               font-size: 0.85em;
+              color: #f6eee4;
+              background-color: #2a1f14;
+              padding: 1% 0%
+               }
+
+               footer a {
+                 color: #f3e6d8;
+                 text-decoration: none;
+                 }
+
+ /* Media Query for Tablet Viewport */
+   @media screen and (min-width: 550px), print {
+       /* Tablet Viewport: Show tab-desk class, hide mobile class */
+         .tab-desk {
+           display: block;
+          }
+
+        .mobile {
+        display: none;
+        }
+        /* Tablet Viewport:style for nav area*/
+        nav li {
+          padding: .5em;
+        }
+        .grid{
+          display: grid;
+          grid-template-columns: 200px 200px;
+          grid-gap: 10px;}
+
+        aside{
+            grid-column: 1 / span 2;
+      }
+
+      /* Media Query for desktop*/
+         @media screen and (min-width: 1000px), print {
+           .tab-desk {
+             display: block;
+            }
+
+           .mobile {
+           display: none;
+           }
+
+           .mobile-tablet {
+             display: none;
+           }
+/*Desktop style for nav area*/
+nav li {
+  font-size: 1.5em;
+}
+nav li a {
+  padding: .5em 1.5em
+}
+
+nav li a:hover {
+  color: #2a1f14;
+  background-color: #f6eee4;
+  opacity: .5;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 30px;}
+
+/* Desktop Viewport: style rule for aside */
+aside{
+  grid-column: 1 / span 3;
+  font-size: 2em;
+}
+
+
+/*Desktop Style rules for main area*/
+           #info ul {
+          margin-left: 5%
+
+           }
+           table {
+  border: 1px solid #2a1f14;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+th,td {
+  border: 1px solid #2a1f14;
+  padding: 1%;
+}
+th {
+  background-color: #2a1f14;
+  color: #fff;
+  font-size: 1.15em;
+}
+tr:nth-child(odd) {
+  background-color: #deccba;
+}
+/* Desktop viewport: style rule for form element */
+  form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  btn {
+    grid-column: 1 / span 2;
+  }
+         }
+
+ /*Media Query for desktop*/
+  @media screen and (min-width: 1921px), print {
+    .tab-desk {
+      display: block;
+     }
+
+    .mobile {
+    display: none;
+    }
+
+    body{
+      background: Linear-gradient(#f6eee4, #78593a);
+    }
+
+    #wrapper{
+      width: 1920px;
+      margin: 0, auto;
+
+    }
+
+    main{
+      background-color: #f6eee4;
+    }
+    /* Large Desktop Viewport: Style rule for grid */
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+/* Desktop Viewport: style rule for aside */
+aside{
+grid-column: 1 / span 4;
+font-size: 3em;
+}
+    }
+
+    @media print {
+        body {
+          background-color: #fff;
+          color: #000;
+        }
+      }
